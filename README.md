@@ -1,8 +1,6 @@
 ## ZHM5Randomizer WSO
 
-This is Warriorstar's branch of the excellent ZHM5Randomizer. It includes a
-handful of new randomization types, as well as the `CUSTOM` mode which allows
-for modifying random generation via the configuration file.
+This is Fynn93's branch of the excellent ZHM5Randomizer.
 
 [Download][] the latest preview release, and install as described in the
 original README below. To configure `CUSTOM` mode, follow the instructions in
