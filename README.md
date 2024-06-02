@@ -6,7 +6,7 @@ This is Fynn93's branch of the excellent ZHM5Randomizer.
 original README below. To configure `CUSTOM` mode, follow the instructions in
 `hitman_randomizer.toml`, which should have been unzipped in `HITMAN2/Retail`.
 
-[Download]: https://github.com/warriorstar-orion/ZHM5Randomizer/releases/latest
+[Download]: https://github.com/Fynn93/ZHM5Randomizer/releases/latest
 
 ## Disclaimer
 
