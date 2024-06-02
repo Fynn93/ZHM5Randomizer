@@ -1,0 +1,25 @@
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - main
+    
+jobs:
+  build:
+    name: Build the Randomizer
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4.0.2
+
+      - name: Install bazel
+        run: npm install -g @bazel/bazelisk
+
+      - name: Build dll
+        run: bazel build :DINPUT8.dll
+
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.3.3
+        with:
+          name: DINPUT8.dll
+          path: bazel-bin/DINPUT8.dll
