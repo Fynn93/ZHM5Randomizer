@@ -31,6 +31,8 @@ GameOffsets::GameOffsets() {
     switch(getVersion()) {
     case GameVersion::H3DX12_STEAM_WOA:
     case GameVersion::H3DX12_STEAM_WOA_VARIANT: {
+        // TODO: Update these
+        // Hitman 3 3.180 Steam offsets
         offsets.pPushItem0 = reinterpret_cast<void*>(0x140db1330);
         offsets.pPushItem1 = reinterpret_cast<void*>(0x140db1920);
         offsets.pPushHeroInventoryDetour = reinterpret_cast<void*>(0x1407dbb23);
@@ -41,13 +43,13 @@ GameOffsets::GameOffsets() {
     } break;
 
     case GameVersion::H3DX12_EGS_WOA: {
-        // Hitman 3 3.170.1 EGS offsets
-        offsets.pPushItem0 = reinterpret_cast<void*>(0x140db0c70);
-        offsets.pPushItem1 = reinterpret_cast<void*>(0x140db1260);
+        // Hitman 3 3.180 EGS offsets
+        offsets.pPushItem0 = reinterpret_cast<void*>(0x140db1150);
+        offsets.pPushItem1 = reinterpret_cast<void*>(0x140db1740);
         offsets.pPushHeroInventoryDetour = reinterpret_cast<void*>(0x1407dbba3);
         offsets.pPushNPCInventoryDetour = reinterpret_cast<void*>(0x1400e02f1);
         offsets.pPushStashInventoryDetour = reinterpret_cast<void*>(0x1402365e4);
-        offsets.pPushWorldInventoryDetour = reinterpret_cast<void*>(0x140dab29a);
+        offsets.pPushWorldInventoryDetour = reinterpret_cast<void*>(0x140dab77a);
         offsets.pZEntitySceneContext_LoadScene = reinterpret_cast<void**>(0x141d7be80);
     } break;
 
