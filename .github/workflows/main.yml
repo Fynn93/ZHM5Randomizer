@@ -7,16 +7,16 @@ on:
 jobs:
   build:
     name: Build the Randomizer
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.0.2
 
-      - name: Install bazel
-        run: npm install -g @bazel/bazelisk
+      - name: Download bazel
+        run: curl -O https://github.com/bazelbuild/bazel/releases/download/7.1.2/bazel-7.1.2-windows-x86_64.exe
 
       - name: Build dll
-        run: bazel build :DINPUT8.dll
+        run: bazel-7.1.2-windows-x86_64.exe build :DINPUT8.dll
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.3.3
