@@ -9,6 +9,9 @@ jobs:
     name: Build the Randomizer
     runs-on: windows-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+    
       - name: Build dll
         run: bazel build :DINPUT8.dll
 
